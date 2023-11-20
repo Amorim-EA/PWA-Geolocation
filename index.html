@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="exemplo de fallback">
+    <meta name="theme-color" content="white" />
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="icon" href="#" sizes="512x512"/>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script src="./js/main.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    <title>PWA Geolocation</title>
+</head>
+<body>
+    <section class="container">
+        <header class="cabecalho">
+            <h1 class="titulo">SPy CAPs - Geolocation</h1>
+        </header>
+        <div class="conteudo">
+            <header class="cabecalhoConteudo">
+                <h2>Geolocalização</h2>
+            </header>
+            <iframe class="mapa" src="https://www.google.com/maps?q=,&z=16&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="conteudoLocalizacao">
+                <p>Latitude: <span id="latitude">0.0</span></p>
+                <p>Longitude: <span id="longitude">0.0</span></p>
+                <div>
+                    <button class="botao" id="localizacao">Capturar Localização</button>
+                </div>
+            </div>
+        </div>
+        <footer class="rodape">
+            Progressive Web Application - Geolocation
+        </footer>
+        </section>
+        <script src="js/main.js"></script>
+</body>
+</html>
